@@ -1,8 +1,8 @@
 var AWS = require("aws-sdk");
 var rand = require("randomstring");
 
-const bucketName = "clwd.app";
-const bucketUrlRoot = "https://clwd.app/";
+const bucketName = "YOUR.DOMAIN";
+const bucketUrlRoot = "https://YOUR.DOMAIN/";
 const keyLength = 8;
 const awsRegion = "eu-west-2";
 
@@ -11,7 +11,7 @@ var s3 = new AWS.S3({ region: awsRegion });
 // uncomment for local debugging
 // const awsKeyId = "";
 // const awsKeySecret = "";
-// var s3 = new AWS.S3({
+// s3 = new AWS.S3({
 //     region: awsRegion,
 //     credentials: new AWS.Credentials(awsKeyId, awsKeySecret),
 // });
